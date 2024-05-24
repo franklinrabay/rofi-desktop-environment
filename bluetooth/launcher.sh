@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir="$ROFI_ENV_DIR"
+dir=$ROFI_ENV_DIR
 
 # Function to list paired Bluetooth devices
 list_devices() {
@@ -25,6 +25,9 @@ echo $device_mac
 is_connected() {
 	echo -e "info $1" | bluetoothctl | grep "Connected: yes"
 }
+
+# TODO: Prompt connection for unknown devices
+# TODO: Seek for devices nearby to pair a new device (Perhaps in a separated launcher?)
 
 # Connect or Disconnect based on current status
 if is_connected "$device_mac"; then

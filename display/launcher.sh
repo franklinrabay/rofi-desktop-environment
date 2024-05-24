@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # TEMP: This will be moved to .config
-dir="$ROFI_ENV_DIR"
+dir=$ROFI_ENV_DIR
 
 # Function to list connected displays and their resolutions
 list_resolutions() {
@@ -15,7 +15,7 @@ list_resolutions() {
 }
 
 # Use Rofi to select a display and resolution
-selected_option=$(list_resolutions | rofi -dmenu -i -p "Select Display and Resolution:" -matching fuzzy -no-custom -theme ${dir}/style/search-icon-name.rasi)
+selected_option=$(list_resolutions | rofi -dmenu -i -p "󰍹" -matching fuzzy -no-custom -theme ${dir}/style/search-icon-name.rasi)
 
 # Check if user made a selection
 if [ -z "$selected_option" ]; then
