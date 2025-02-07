@@ -40,3 +40,16 @@ Coming soon...
 ### Styling
 
 Coming soon...
+
+### TODO List
+
+The motivation for this tool is to have a simple TODO list that
+can be used with a window manager keybinding.
+
+On ./todo/launcher.sh there is availaable a simple TODO list
+To use it, launch the script
+Type the TODO item and press enter
+
+To remove, use the arrow up and down to select the item and press enter
+
+To cancel, press escape
